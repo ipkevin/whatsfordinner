@@ -1,0 +1,145 @@
+@use "partials/fonts";
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  background: #f0f5f9;
+}
+
+.header {
+  text-align: center;
+  color: black;
+  border-radius: 5px 0 0;
+  background-color: #ffc4a9;
+  padding-top: 6rem;
+
+  &__wrapper {
+    background-color: #fff;
+    padding: 2rem 0;
+    border-radius: 40px 40px 0 0;
+  }
+
+  &__title {
+    font-family: "Pacifico", "Brush Script MT", "cursive", "Script MT";
+    font-size: 3rem;
+    margin: 0 0 1rem;
+  }
+  &__input {
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 2.5rem;
+    display: block;
+    margin: auto;
+    width: 25%;
+    margin-bottom: 1.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    background-color: #72bf9d;
+    border: none;
+    border-color: #72bf9d;
+    color: white;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 0 0.5rem;
+    font-size: 0.875rem;
+    font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+    font-weight: 400;
+    transition: background-color 100ms linear;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #fc6012;
+    }
+  }
+}
+
+.recipes {
+  padding: 5rem 10%;
+  background-color: #f0f5f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__article {
+    width: 30%;
+
+    &--active {
+      position: absolute;
+      background: #f0f5f9;
+      padding-top: 3rem;
+      width: 100%;
+      z-index: 999;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      .recipes__details {
+        display: block;
+      }
+
+      .recipes__article-wrapper {
+        width: 50%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    }
+  }
+
+  &__details {
+    display: none;
+  }
+
+  &__instructions {
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+
+  &__video {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 30vw;
+  }
+  &__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.error__text {
+  color: red;
+}
+
+.input-error {
+  border: 2px solid red;
+}

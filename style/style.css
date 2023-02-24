@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@font-face {
+  font-family: "DancingScript";
+  src: url("./Assets/Fonts/DancingScript-Regular.woff2") format("woff2"), url("../Assets/Fonts/DancingScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  background: #f0f5f9;
+}
+
+.header {
+  text-align: center;
+  color: black;
+  border-radius: 5px 0 0;
+  background-color: #ffc4a9;
+  padding-top: 6rem;
+}
+.header__wrapper {
+  background-color: #fff;
+  padding: 2rem 0;
+  border-radius: 40px 40px 0 0;
+}
+.header__title {
+  font-family: "Pacifico", "Brush Script MT", "cursive", "Script MT";
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+.header__input {
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 2.5rem;
+  display: block;
+  margin: auto;
+  width: 25%;
+  margin-bottom: 1.5rem;
+}
+.header__input:focus {
+  outline: none;
+}
+.header__text {
+  font-size: 1.2rem;
+}
+.header .button {
+  background-color: #72bf9d;
+  border: none;
+  border-color: #72bf9d;
+  color: white;
+  padding: 1em;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+  font-size: 0.875rem;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  font-weight: 400;
+  transition: background-color 100ms linear;
+  text-decoration: none;
+}
+.header .button:hover {
+  background-color: #fc6012;
+}
+
+.recipes {
+  padding: 5rem 10%;
+  background-color: #f0f5f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.recipes__title {
+  text-align: center;
+}
+.recipes__article {
+  width: 30%;
+}
+.recipes__article--active {
+  position: absolute;
+  background: #f0f5f9;
+  padding-top: 3rem;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.recipes__article--active .recipes__details {
+  display: block;
+}
+.recipes__article--active .recipes__article-wrapper {
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.recipes__image {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.recipes__image:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.recipes__details {
+  display: none;
+}
+.recipes__instructions {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.recipes__video {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 30vw;
+}
+.recipes__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.error__text {
+  color: red;
+}
+
+.input-error {
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */
