@@ -1,5 +1,5 @@
 # whatsfordinner
-Made in 5 hours for the BrainStation Web Dev bootcamp's group hackathon.  Along with 2 other developers, we designed & built this What's For Dinner website in a single morning. 
+Made in 5 hours for the BrainStation Web Dev bootcamp's first group hackathon.  Along with 2 other developers, we designed & built this What's For Dinner website in a single morning in February 2023.
 
 Enter an ingredient and get back recipes along with Youtube videos and photos.
 
